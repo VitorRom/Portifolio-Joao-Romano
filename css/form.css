@@ -1,0 +1,174 @@
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: #ffffff;
+    transition: background 0.3s linear;
+  }
+  
+  .dark,.dark header{
+    background-color: #232c35;
+  }
+  
+  .dark nav a{
+    color: #eeeeee !important;
+  }
+  
+  
+  
+  .dark p, .dark h1, .dark span, .dark h2{
+    color: #eeeeee !important;
+  }
+  
+  .btn-dark-theme{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .label {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    border-radius: 50px;
+    cursor:pointer;
+    padding: 5px;
+    position: relative;
+    height: 22px;
+    width: 48px;
+    transform: scale(1.5);
+  }
+  
+  .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 1.4px;
+    left: 2.3px;
+    height: 19px;
+    width: 19px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: #b6b5b0;
+    font-size: 1rem;
+    margin-left: 10px
+  }
+  
+  .fa-sun {
+    color: #e6c430;
+    font-size: 0.9rem;
+  
+  }
+  
+  header {
+    background-color: #333;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  header p {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+  
+  }
+  
+  nav {
+    margin-bottom: 50px;
+    color: #000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: center;
+    gap: 39px;
+  
+  }
+  
+  #home {
+    margin-left: 30%;
+  }
+  
+  nav li {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+  
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000;
+  
+  
+  }
+
+.portfolio-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #contato h2 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="tel"],
+  .form-group input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }

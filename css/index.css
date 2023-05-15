@@ -1,0 +1,779 @@
+html {
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  transition: background 0.3s linear;
+}
+
+.dark,
+.dark header {
+  background-color: #171d22;
+}
+
+.dark nav a {
+  color: #eeeeee !important;
+}
+
+.dark p,
+.dark h1,
+.dark span,
+.dark h2 {
+  color: #eeeeee !important;
+}
+
+.btn-dark-theme {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-left: 13px;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  height: 22px;
+  width: 48px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.4px;
+  left: 2.3px;
+  height: 19px;
+  width: 19px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #b6b5b0;
+  font-size: 1rem;
+  margin-left: 10px
+}
+
+.fa-sun {
+  color: #e6c430;
+  font-size: 0.9rem;
+}
+
+header {
+  background-color: #333;
+  background-color: rgb(255, 255, 255);
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header p {
+  font-size: 1.4rem;
+  margin-right: 220px;
+  margin-top: 32px;
+}
+
+nav {
+  margin-bottom: 50px;
+  color: #000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 39px;
+}
+
+#home {
+  margin-left: 17%;
+}
+
+nav li {
+  font-size: 1.4rem;
+  margin-top: 32px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+section {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container-pai {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.container {
+  padding: 0 20px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  margin-right: 17%;
+}
+
+#imagem-estudante {
+  height: 27rem;
+}
+
+
+#paragrafo-tela-inicial {
+  margin-top: 140px;
+  margin-bottom: 6px;
+}
+
+.container p {
+  font-size: 1.7rem;
+  margin-right: 16px;
+  margin-bottom: 44px;
+  margin-top: 10px;
+  color: rgb(59, 56, 56);
+  position: relative;
+}
+
+.container h1 {
+  font-size: 3.4rem;
+  color: rgb(59, 56, 56);
+}
+
+
+.imagem-container {
+  margin-top: 140px;
+  margin-left: 32px;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  margin-right: 54px;
+}
+
+.dark .button{
+  border: 2px solid #ffffff;
+}
+
+.button {
+  display: inline-block;
+  background: #837d7d;
+  border: 2px solid #463f3f;
+  text-align: center;
+  position: relative;
+  width: 212px;
+  height: 60px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  z-index: 1;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #776e6e;
+  background: #646161;
+  border-radius: 10px;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.button:hover {
+  background: #646060;
+}
+
+.button:hover::before {
+  width: 100%;
+}
+
+.fa-brands {
+  margin-left: 19px;
+  margin-top: 40px;
+  font-size: 2.6rem;
+}
+
+.fa-linkedin {
+  color: #0e76a8;
+  margin-left: 6.4px;
+}
+
+.dark .fa-github {
+  color: #ccc;
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-whatsapp {
+  color: #7dc639;
+}
+
+#espaco-fantasma {
+  height: 64px;
+}
+
+.container-sections h1 {
+  text-align: center;
+  font-size: 2.9rem;
+  margin-bottom: 64px;
+  margin-top: 32px;
+  color: rgb(59, 56, 56);
+}
+
+.container-sections h2 {
+  text-align: center;
+  font-size: 2.9rem;
+  margin-bottom: 64px;
+  margin-top: 32px;
+  color: rgb(59, 56, 56);
+}
+
+.container-sections p {
+  font-size: 1.6rem;
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
+
+#txt-sobre-mim {
+  margin-bottom: 80px;
+}
+
+#logo-tecnologias {
+  gap: 20px;
+}
+
+#logo-tecnologias img {
+  height: 100px;
+}
+
+.container-sections ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-javascript img {
+  height: 100px;
+}
+
+#logo-react img {
+  height: 98px;
+}
+
+#logo-angular img {
+  margin-top: 15px;
+  height: 100px;
+  width: 90%;
+  margin-left: 5px;
+}
+
+#logo-mysql img {
+  height: 100px;
+  margin-right: 15px;
+}
+
+.projetos {
+  margin-bottom: 80px;
+}
+
+#projetos h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: rgb(59, 56, 56);
+}
+
+.card-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 32px;
+  width: calc(50% - 1rem);
+  max-width: 250px;
+}
+
+@media screen and (max-width: 850px) {
+  .project-card {
+    width: 100%;
+  }
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  margin-bottom: 20px;
+}
+
+.button-card {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+@media(max-width: 1450px) {
+  header p {
+    margin-right: 176px
+  }
+
+  .container p {
+    font-size: 1.4rem;
+  }
+
+  .container h1 {
+    font-size: 3rem;
+  }
+
+  #imagem-estudante {
+    height: 400px
+  }
+
+  #logo-tecnologias img {
+    height: 95px;
+  }
+}
+
+@media (max-width: 1300px) {
+  #home {
+    margin-left: 5%;
+  }
+
+  .container {
+    margin-right: 5%;
+  }
+
+  #espaco-fantasma {
+    height: 48px;
+  }
+
+  .container-sections h1,
+  .container-sections h2 {
+    font-size: 2.6rem;
+  }
+
+  .container-sections p {
+    font-size: 1.5rem;
+  }
+
+  #logo-tecnologias img {
+    height: 85px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #home {
+    margin-left: 0%;
+  }
+
+  .container {
+    margin-right: 0%;
+  }
+
+  #espaco-fantasma {
+    height: 32px;
+  }
+
+  #logo-tecnologias img,
+  #logo-angular img {
+    height: 80px;
+  }
+}
+
+@media (max-width:1000px) {
+  .label {
+    height: 19px;
+    width: 45px;
+  }
+
+  .label .ball {
+    width: 17px;
+    height: 17px;
+  }
+
+  .fa-sun {
+    margin-left: -1px;
+  }
+
+  .fa-moon {
+    margin-left: 8px;
+    margin-bottom: 0.5px;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    margin-right: 96px;
+  }
+
+  nav li {
+    font-size: 1.2rem
+  }
+
+  .container {
+    margin-right: -2%;
+  }
+
+  .container p {
+    font-size: 1.2rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .container h1 {
+    font-size: 2.6rem;
+  }
+
+  #imagem-estudante {
+    height: 20rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    width: 176px;
+    height: 48px;
+  }
+
+  .fa-brands {
+    font-size: 2rem;
+    margin-top: 27.2px;
+    margin-left: 11.2px;
+  }
+  .fa-linkedin{
+    margin-left: 3px;
+  }
+
+  .container-sections h1,
+  .container-sections h2 {
+    font-size: 2.2rem;
+  }
+
+  .container-sections p {
+    font-size: 1.3rem;
+    margin-left: 12%;
+    margin-right: 9%;
+  }
+
+  #espaco-fantasma {
+    height: 24px;
+  }
+
+  #logo-tecnologias img {
+    height: 75px;
+  }
+}
+
+@media (max-width: 850px) {
+  .btn-dark-theme {
+    margin-top: 33.6px;
+  }
+
+  header p {
+    display: none;
+  }
+
+  #home {
+    margin-left: 32px;
+  }
+
+  .imagem-container {
+    margin-top: 96px;
+  }
+
+  #imagem-estudante {
+    height: 240px
+  }
+
+  #paragrafo-tela-inicial {
+    margin-top: 80px
+  }
+
+  .container {
+    margin-right: -5%;
+  }
+
+  .container p {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+
+  .container h1 {
+    font-size: 35.2;
+  }
+
+  .botoes {
+    gap: 10px;
+    margin-left: -2%;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    width: 160px;
+    height: 40px
+  }
+
+  .fa-brands {
+    margin-top: 16px;
+    margin-left: 8px;
+  }
+
+  .fa-linkedin {
+    margin-left: 2px
+  }
+
+  #espaco-fantasma {
+    display: none;
+  }
+
+}
+
+@media(max-width: 700px) {
+  .btn-dark-theme {
+    margin-top: 32px
+  }
+
+  nav ul {
+    gap: 32px;
+  }
+
+  #home {
+    margin-left: 10px;
+  }
+
+  nav li {
+    font-size: 17.6px
+  }
+
+  .container {
+    margin-right: -9%;
+  }
+
+  .container p {
+    font-size: 16px
+  }
+
+  .container h1 {
+    font-size: 25.6px
+  }
+
+  #imagem-estudante {
+    height: 192px
+  }
+
+  .button {
+    font-size: 0.8rem;
+    width: 140.8px
+  }
+  .fa-brands{
+    font-size: 1.6rem;
+  }
+
+  .fa-linkedin {
+    margin-left: 1px;
+  }
+
+  .container-sections h1,
+  .container-sections h2 {
+    font-size: 2.0rem;
+  }
+
+  .container-sections p {
+    font-size: 1.1rem;
+    margin-left: 12%;
+    margin-right: 9%;
+  }
+  #logo-tecnologias img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .label {
+    width: 34px;
+    height: 17px;
+  }
+
+  .label .ball {
+    width: 13.5px;
+    height: 13.5px;
+    top: 1.7px;
+  }
+
+  .checkbox:checked+.label .ball {
+    transform: translateX(17px);
+  }
+
+  .fa-moon {
+    font-size: 0.7rem;
+  }
+
+  .fa-sun {
+    font-size: 0.7rem;
+  }
+
+  nav ul {
+    gap: 26px;
+  }
+
+  .container {
+    margin-right: -15%;
+  }
+
+  .container p {
+    font-size: 0.9rem;
+  }
+  .container h1{
+    font-size: 1.5rem;
+  }
+  .button{
+    font-size: 0.7rem;
+    width: 127px;
+    height: 34px;
+    border: 1px solid #ffffff !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .container p {
+    font-size: 1.2rem;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .imagem-container {
+    display: none;
+  }
+
+  .label {
+    width: 32px;
+    height: 16px;
+  }
+
+  .label .ball {
+    width: 12px;
+    height: 12px;
+    top: 2px;
+  }
+
+  .checkbox:checked+.label .ball {
+    transform: translateX(16px);
+  }
+
+  .fa-moon {
+    font-size: 0.6rem;
+  }
+
+  .fa-sun {
+    font-size: 0.6rem;
+  }
+
+  #home {
+    margin-left: 0px;
+  }
+
+  nav ul {
+    gap: 12.8px
+  }
+
+  nav li {
+    font-size: 0.9rem;
+  }
+
+  .botoes {
+    margin-left: -11%;
+  }
+
+  .fa-brands {
+    font-size: 1.5rem;
+    margin-left: 3.2px
+  }
+
+  .fa-linkedin {
+    margin-left: 2px;
+  }
+
+  .container-sections h1,
+  .container-sections h2 {
+    font-size: 2rem;
+  }
+
+  .container-sections p {
+    font-size: 1.1rem;
+    margin-left: 15%;
+    margin-right: 13%;
+  }
+
+  #logo-tecnologias img {
+    height: 48px;
+  }
+}
